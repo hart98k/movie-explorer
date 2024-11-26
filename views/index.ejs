@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie explorer</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MY MOVIES EXPLORER</h1>
+        <div class="response-area">
+            <p>
+              <%= content %>
+            </p>
+          </div>
+          <form id="myForm" method="post">
+      <label for="idInput">Id:</label>
+      <input type="text" id="idInput" name="id">
+
+      <label for="secretInput">movie:</label>
+      <input type="text" id="secretInput" name="movie">
+
+      
+
+      <label for="submit"></label>
+      <input id="get" type="submit" value="SEARCH" formaction="/getmovie">
+     
+
+    </form>
+    </div>
+    
+</body>
+</html>
